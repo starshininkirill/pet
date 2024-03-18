@@ -1,0 +1,325 @@
+:root {
+  --head: #141414;
+  --head-dark: #131317;
+  --card: #fff;
+  --main-text: #fff9;
+  --red: #c10000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 14px 30px;
+  color: var(--head);
+  background-color: var(--card);
+  border: 1px solid var(--card);
+  transition: all 0.3s ease-in;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--head);
+  color: var(--card);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.p1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--main-text);
+  transition: all 0.3s ease-in;
+}
+.p1:hover {
+  color: var(--card);
+}
+
+a {
+  text-decoration: none;
+  color: var(--card);
+}
+
+.file-input {
+  color: #fff;
+  width: 100%;
+}
+
+.header {
+  padding: 20px 0;
+  background: var(--head);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .logo {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.form-title {
+  font-size: 24px;
+  color: var(--card);
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.users_login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/static/images/login-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.users_login .error {
+  color: var(--red);
+  margin-bottom: 5px;
+}
+.users_login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+.users_login .login-form {
+  background-color: var(--head-dark);
+  height: max-content;
+  padding: 30px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 20px;
+}
+.users_login .login-form .errorlist li {
+  font-size: 16px;
+  color: red;
+}
+.users_login .login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.users_login .login-form .form-group .form-input {
+  padding: 12px 10px;
+  border: 1px solid var(--main-text);
+  border-radius: 20px;
+  background-color: var(--head-dark);
+  font-size: 15px;
+  color: var(--card);
+}
+.users_login .login-form .form-group .form-input::placeholder {
+  font-size: 15px;
+  color: var(--card);
+}
+.users_login .login-form .form-group label {
+  font-size: 18px;
+  color: var(--card);
+}
+.users_login .login-form .register-link {
+  color: var(--card);
+  font-size: 16;
+  text-align: center;
+}
+.users_login .login-form .register-link a {
+  text-decoration: underline;
+}
+
+.users_registration {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/static/images/login-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.users_registration .error {
+  color: var(--red);
+  margin-bottom: 5px;
+}
+.users_registration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+.users_registration .registration-form {
+  background-color: var(--head-dark);
+  height: max-content;
+  padding: 30px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 20px;
+}
+.users_registration .registration-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.users_registration .registration-form .form-group .form-input {
+  padding: 12px 10px;
+  border: 1px solid var(--main-text);
+  border-radius: 20px;
+  background-color: var(--head-dark);
+  font-size: 15px;
+  color: var(--card);
+}
+.users_registration .registration-form .form-group .form-input::placeholder {
+  font-size: 15px;
+  color: var(--card);
+}
+.users_registration .registration-form .form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--card);
+}
+.users_registration .registration-form .login-link {
+  color: var(--card);
+  font-size: 16;
+  text-align: center;
+}
+.users_registration .registration-form .login-link a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.users_profile {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/static/images/login-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.users_profile .error {
+  color: var(--red);
+  margin-bottom: 5px;
+}
+.users_profile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+.users_profile .profile-form {
+  background-color: var(--head-dark);
+  height: max-content;
+  padding: 30px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  min-width: 350px;
+  gap: 20px;
+}
+.users_profile .profile-form .title {
+  font-size: 26px;
+  color: var(--card);
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.users_profile .profile-form .title .ava {
+  width: 100%;
+  height: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.users_profile .profile-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+}
+.users_profile .profile-form .form-group.avatar {
+  grid-column: span 2;
+  width: 100%;
+}
+.users_profile .profile-form .form-group.avatar input {
+  padding: 12px 10px;
+  border: 1px solid var(--main-text);
+  border-radius: 20px;
+  background-color: var(--head-dark);
+  font-size: 15px;
+  color: var(--card);
+}
+.users_profile .profile-form .form-group .form-input {
+  padding: 12px 10px;
+  border: 1px solid var(--main-text);
+  border-radius: 20px;
+  background-color: var(--head-dark);
+  font-size: 15px;
+  color: var(--card);
+}
+.users_profile .profile-form .form-group .form-input::placeholder {
+  font-size: 15px;
+  color: var(--card);
+}
+.users_profile .profile-form .form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--card);
+}
+.users_profile .profile-form .login-link {
+  color: var(--card);
+  font-size: 16;
+  text-align: center;
+}
+.users_profile .profile-form .login-link a {
+  text-decoration: underline;
+  font-weight: 600;
+}

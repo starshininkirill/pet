@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+  <main id="main-page">
+    <div class="container">
+      <section class="nav">
+        <a href="{% url 'index' %}">Все фильмы</a>
+        <a href="">Жанры</a>
+      </section>
+      <section class="content">
+        {% include 'kino/sidebar.html' %}
+        {% include 'kino/films.html' %}
+      </section>
+    </div>
+  </main>
+{% endblock %}

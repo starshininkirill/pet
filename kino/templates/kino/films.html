@@ -1,0 +1,7 @@
+{% if films %}
+  <div class="films">
+    {% for film in films %}
+      <div class="film">{{ film.name }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
